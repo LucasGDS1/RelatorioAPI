@@ -88,8 +88,12 @@ app.delete('/deleterelatorio/:id', function (req, res) {
 
 
 
-app.listen(8080, function () {
-  console.log('Rodando')
+// app.listen(8080, function () {
+//   console.log('Rodando')
+// });
+
+app.listen(port, () => {
+  console.log(`Rodando porta: ${port}!`);
 });
 
 module.exports = app;
