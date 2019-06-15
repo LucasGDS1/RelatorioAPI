@@ -92,8 +92,8 @@ app.delete('/deleterelatorio/:id', function (req, res) {
 //   console.log('Rodando')
 // });
 
-app.listen(port, () => {
-  console.log(`Rodando porta: ${port}!`);
+app.listen(process.env.PORT || 8080, function () {
+  console.log("Rodando porta:", thish.address().port, app.settings.env);
 });
 
 module.exports = app;
